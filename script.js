@@ -1,6 +1,14 @@
 
 function add(){
-    document.body.innerhtml="";
+    // document.body.innerhtml="";
+    let array = document.body.children();
+    if(!array)
+        return;
+
+    for (let i = 0; i < array.length; i++) {
+        array[i].remove;   
+    }
+
     let h1 = document.createElement("h1");
     h1.textContent="Lurad!!!!!"
     let p = document.createElement("h1");
