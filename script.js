@@ -1,5 +1,5 @@
 
-function add(){
+function start_animation(){
     // document.body.innerhtml="";
     let array = document.body.children;
     if(!array){
@@ -8,7 +8,6 @@ function add(){
     }
         
     for (let i = 0; i < array.length; i++) {
-        console.log("tar bort "+array[i]);
         array[i].remove();   
     }
 
