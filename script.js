@@ -1,12 +1,15 @@
 
 function add(){
     // document.body.innerhtml="";
-    let array = document.body.children();
-    if(!array)
+    let array = document.body.children;
+    if(!array){
+        console.log("inga element");
         return;
-
+    }
+        
     for (let i = 0; i < array.length; i++) {
-        array[i].remove;   
+        console.log("tar bort "+array[i]);
+        array[i].remove();   
     }
 
     let h1 = document.createElement("h1");
